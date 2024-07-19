@@ -14,7 +14,7 @@ async def setup_telegram_client():
     try:
         API_ID = config['account']['id']
         API_HASH = config['account']['hash']
-        PHONE = config['account']['PHONE']
+        PHONE = config['account']['phone']
         client = TelegramClient(PHONE, API_ID, API_HASH)
     except KeyError:
         print("\033[91m[!] run \033[92mpython3 setup.py \033[91mfirst !!\n")
